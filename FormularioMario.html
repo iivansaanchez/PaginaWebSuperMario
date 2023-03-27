@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
+    <style type="text/css">
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        font-family: "Alkatra", sans-serif;
+    }   
+
+    input[type=text] {
+        font-family: "Alkatra", sans-serif;
+        border: 2px solid lime;
+        border-radius: 4px;
+    }
+
+    fieldset{
+        font-family: "Alkatra", sans-serif;
+        border: 2px solid lime;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<form action="https://iesjacaranda.es/lmsgi/resultado.php" method="post">
+    <fieldset>
+        <img src="./portadaPagina.webp" width="300" height="200">
+        <legend>Datos Personales</legend>
+        <p>Nombre: <input type="text" name="nombre"></p>
+        <p>Apellidos: <input type="text" name="apellido"></p>
+        <p>Calle: <input type="text" name="calle"></p>
+        <p>Exponga brevemente su problema: </p>
+        <textarea cols="50" rows="4"></textarea></br>
+        <p>Elija una fecha de reparación: <input type="date" name="fecha"></p>
+        <p><input type="submit" value="Enviar">       <input type="reset" value="Borrar"></p>
+    </fieldset>
+</form>
+</html>
